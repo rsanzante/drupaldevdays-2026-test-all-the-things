@@ -1,0 +1,14 @@
+.idea/
+*.iml
+*.iws
+*.eml
+out/
+.DS_Store
+.svn
+log/*.log
+tmp/**
+node_modules/
+.sass-cache
+
+# Esto parece un directorio git, sera de la versión en gitlab, lo ignoro.
+gitGitLab

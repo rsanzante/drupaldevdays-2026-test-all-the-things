@@ -1,0 +1,1152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Test all the things!</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/white.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/impact"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/hennigar"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <div class="cover-logo">
+          <a href="/">
+            <img
+              src="./assets/images/event_logo_2026.png"
+              alt="Event logo"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="reveal">
+      <div class="slides">
+        <section
+          data-state="cover"
+          data-background-image="./assets/images/background01.svg"
+          data-background-position="0% 100%"
+          data-background-size="auto"
+        >
+          <div>
+            <div class="title">
+              <h1 class="xxlarge">
+                Test all the things!
+              </h1>
+              <h2 class="xlarge">Ricardo Sanz Ante</h2>
+            </div>
+            <div class="logo">
+              <div>
+                <img
+                  src="./assets/images/event_logo_2026.png"
+                  alt="Event logo"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          data-state="authors"
+          data-background-image="./assets/images/background02.svg"
+          data-background-position="0% 100%"
+          data-background-size="auto"
+        >
+          <div class="ice-breaking">
+            <article class="panel">
+              <img
+                src="./assets/images/sanzante.jpg"
+                width="100px"
+                height="100px"
+                alt="Ricardo Sanz Ante"
+              />
+              <h2>Ricardo Sanz Ante</h2>
+              <h3>DevOps, Drupal and Angular development</h3>
+              <h4>FLOSS and weird music</h4>
+              <a href="https://drupal.org/u/tunic" target="_blank">
+                drupal.org/u/tunic
+              </a>
+            </article>
+          </div>
+          <br />
+          <a href="https://metadrop.net" target="_blank">
+            <img src="./assets/images/metadrop-logo.svg" width="350" />
+          </a>
+        </section>
+
+        <section
+          data-state="chapter"
+          data-auto-animate
+          data-background-image="./assets/images/background03.svg"
+          data-background-size="auto"
+        >
+          <h1>Walkthrough</h1>
+          <br>
+          <img src="./assets/images/test-all-the-things.jpg" alt="Test all the things meme" width="30%"/>
+        </section>
+
+        <section data-auto-animate>
+          <h1>Walkthrough</h1>
+          <ol class="">
+            <li class="fragment fade-in">Introduction</li>
+            <li class="fragment fade-in">How to test?</li>
+            <li class="fragment fade-in">Test all the things</li>
+            <li class="fragment fade-in">When and where to test</li>
+            <li class="fragment fade-in">Implementation</li>
+          </ol>
+        </section>
+
+        <section
+          data-state="chapter"
+          data-background-image="./assets/images/background04.svg"
+          data-background-size="auto"
+        >
+          <h1>Introduction</h1>
+        </section>
+
+        <section data-state="content">
+          <h1>Introduction</h1>
+            <h2>Why testing?</h2>
+            <ul class="multicolumn">
+            <li>Peace of mind</li>
+            <li>Solid functionality</li>
+            <li>Early error detection and correction</li>
+            <li>Working with a safety net</li>
+            <li>Refactor safely </li>
+            <li>Do not lose your evenings and weekends</li>
+            <li>Time/cost savings in the medium and long term</li>
+            <li>Keep the AIs under control</li>
+          </ul>
+        </section>
+
+        <section data-state="content">
+          <h1>Introduction</h1>
+            <h2>Testing in the AI era</h2>
+            <div class="multicolumn">
+              <div>
+              <ul >
+                <li>Code is easily generated</li>
+                <li>False sense of security when coding</li>
+                <li>AIs may introduce bugs or other defects</li>
+                <li>Risk of false confidence if tests aren't reviewed.</li>
+              </ul>
+              </div>
+              <div>
+              <ul>
+                <li>AIs generate test cases easily</li>
+                <li>AIs speed up repetitive test writing </li>
+                <li>AIs can also test</li>
+              </ul>
+              </div>
+            </div>
+            <br />
+            <div><strong>A safety net is even more important!</strong></div>
+        </section>
+
+        <section
+          data-state="content"
+          data-background-image="assets/images/img01-Drupal-tests.png"
+          data-background-size="20%"
+          data-background-position="75% 50%"
+        >
+          <h1>Introduction</h1>
+          <h2>Native Drupal tests</h2>
+
+          <ul>
+            <li>Unit tests</li>
+            <li>Kernel tests</li>
+            <li>Functional tests</li>
+            <li>Functional Javascript tests</li>
+            <li>Nightwatch</li>
+          </ul>
+        </section>
+
+        <section
+          data-state="content"
+          data-background-size="20%"
+          data-background-position="95% 50%"
+        >
+          <h1>Introduction</h1>
+          <h2>Test all the things</h2>
+          <div>There much more to test!</div>
+
+            <ul class="multicolumn no-bullets">
+            <li>Static code analysis</li>
+            <li>Package management (security and updates)</li>
+            <li>Acceptance tests</li>
+            <li>Visual regression tests</li>
+            <li>Accessibility</li>
+            <li>Performance, quality and correctness</li>
+            <li>Internal and external APIs</li>
+            <li>HTTP headers</li>
+            <li>Smoke tests</li>
+            <li>Deployment tests</li>
+          </ul>
+        </section>
+
+        <section
+          data-state="content"
+          data-background-size="20%"
+          data-background-position="95% 50%"
+        >
+          <h1>Introduction</h1>
+          <h2>Environments</h2>
+
+          <ul>
+            <li>Local environment</li>
+            <li>CI</li>
+            <li>Production environment</li>
+            <li>External elements on which the system depends</li>
+          </ul>
+        </section>
+
+        <section
+          data-state="chapter"
+          data-background-image="./assets/images/background06.svg"
+          data-background-size="auto"
+        >
+          <h1>How to test</h1>
+        </section>
+
+        <section
+          data-state="content"
+          data-auto-animate
+          data-auto-animate-id="copia-prod"
+          data-background-size="auto"
+        >
+          <h1>How to test</h1>
+          <h2>Production mirror</h2>
+          <div><strong>Advantages</strong></div>
+
+          <ul>
+            <li>
+              Content to test all functionalities (over time)
+            </li>
+            <li>Updated content</li>
+            <li>Real configuration</li>
+            <li>It is possible to test special cases only happening in production</li>
+            <li>
+              Relatively easy to implement... <span class="fragment fade-in">ignoring its problems</span>
+            </li>
+          </ul>
+        </section>
+
+        <section
+          data-state="content"
+          data-auto-animate
+          data-auto-animate-id="copia-prod"
+          data-background-size="auto"
+        >
+          <h1>How to test</h1>
+          <h2>Production mirror</h2>
+          <div><strong>Drawbacks</strong></div>
+
+          <ul>
+            <li>Automated tests need content that doesn't change</li>
+            <li>Requires data sanitisation</li>
+            <li>Uses real configuration</li>
+            <li>Requires connection with production</li>
+            <li>Huge databases are a pain</li>
+            <li>Very long setup time with large projects</li>
+          </ul>
+        </section>
+
+        <section
+          data-state="content"
+          data-auto-animate
+          data-auto-animate-id="insalar-sitio"
+          data-background-size="auto"
+        >
+          <h1>How to test</h1>
+            <h2>Install site and test content</h2>
+            <div>
+            Install site from configuration and load test content
+            </div>
+            <br />
+            <div><strong>Advantages</strong></div>
+            <ul>
+            <li>No security or privacy issues</li>
+            <li>Controlled content, without unexpected changes</li>
+            <li>Controlled configuration</li>
+            <li>Completely Drupal-oriented approach</li>
+            <li>Small data sizes</li>
+            <li>Short and predictable setup time</li>
+            </ul>
+        </section>
+
+        <section
+          data-state="content"
+          data-auto-animate
+          data-auto-animate-id="insalar-sitio"
+          data-background-size="auto"
+        >
+          <h1>How to test</h1>
+            <h2>Install site and test content</h2>
+            <div><strong>Drawbacks</strong></div>
+
+            <ul>
+            <li>Functionalities require specific content</li>
+            <li>Content must be formalised and maintained</li>
+            <li>Testing production-only errors is harder</li>
+            <li>It can miss some cases due to lack of content</li>
+          </ul>
+        </section>
+
+        <section
+          data-state="content"
+          data-auto-animate
+          data-auto-animate-id="insalar-sitio"
+          data-background-size="auto"
+
+          data-background-image="./assets/images/create_content_workflow-vertical.png"
+          data-background-position="75% 40%"
+          class="weight-left-little"
+        >
+          <h1>How to test</h1>
+            <h2>Install site and test content</h2>
+            <div><strong>Implementation</strong></div>
+            <dev>During development, export manually created content wih Default Content.
+              <br>
+              For testing:</dev>
+            <ul>
+              <li>Install site and import configuration</li>
+              <li>Config Split (or configuration override) to tweak env for tests</li>
+              <li>Import content with Default Content</li>
+              <li>Run tests!</li>
+            </ul>
+        </section>
+
+        <section
+          data-state="chapter"
+          data-background-image="./assets/images/background07.svg"
+          data-background-size="auto"
+        >
+          <h1>Test all the things</h1>
+        </section>
+
+        <section
+          data-state="content"
+          data-auto-animate
+          data-auto-animate-id="analisis-estatico-codigo"
+          data-background-size="auto"
+        >
+            <h1>Test all the things</h1>
+            <h2>Static code analysis</h2>
+            <ul>
+              <li>Bug detection</li>
+              <li>Enforce coding standards</li>
+              <li>Avoid bad practices</li>
+              <li>Cyclomatic complexity</li>
+              <li>CSS, PHP, JavaScript, YAML, Composer...</li>
+            </ul>
+        </section>
+
+        <section
+          data-state="content"
+          data-auto-animate
+          data-auto-animate-id="analisis-estatico-codigo"
+        >
+          <h1>Test all the things</h1>
+          <h2>Static code analysis</h2>
+          <div><strong>Tools</strong></div>
+          <ul>
+            <li>PHPStan</li>
+            <li>phpcs</li>
+            <li>phpmd</li>
+            <li>linters (parallel-lint)</li>
+          </ul>
+        </section>
+
+        <section>
+          <div>phpmd</div>
+          <img src="./assets/images/img11-phpmd.png" />
+        </section>
+
+        <section>
+          <div>phpcs</div>
+          <img src="./assets/images/img12-phpcs.png" />
+        </section>
+
+        <section
+          data-state="content"
+          data-auto-animate
+          data-auto-animate-id="analisis-estatico-codigo"
+        >
+          <h1>Test all the things</h1>
+          <h2>Static code analysis</h2>
+          <div><strong>Wrappers</strong></div>
+          <ul>
+            <li>phpqa: triggered by command (agentic IA, manually or CI)</li>
+            <li>Grumphp: triggered by Git pre-commit hook</li>
+          </ul>
+        </section>
+
+        <section
+          data-state="content"
+          data-background-image="assets/images/img08-composer-audit.png"
+          data-background-position="98% 50%"
+          data-background-size="43%"
+          class="weight-left"
+          data-auto-animate-id="paqueteria-php"
+        >
+          <h1>Test all the things</h1>
+          <h2>PHP packages</h2>
+            <ul>
+            <li>
+              Packages with security issues
+              <pre>composer audit --locked</pre>
+            </li>
+
+            <li>
+              Outdated packages
+              <pre>composer outdated --locked --strict</pre>
+            </li>
+            <li>Unapplied patches</li>
+            <li>Uninstalled modules</li>
+            </ul>
+        </section>
+
+        <section
+          data-state="content"
+          data-auto-animate
+          data-auto-animate-id="test-aceptacion"
+        >
+          <h1>Test all the things</h1>
+            <h2>Acceptance tests</h2>
+            <div>
+            Site functionality tests written in natural language
+            (Behaviour Driven Development)
+            </div>
+            <ul >
+              <li>If all pass, the project is complete</li>
+              <li>A real browser tests the site</li>
+              <li>A soft browser (Guzzle) tests the site</li>
+              <li>
+                Natural language allows
+                <ul>
+                  <li>Discussing tests with non-technical staff/client</li>
+                  <li>Eliminating ambiguity in requirements</li>
+                  <li>Writing tests before having code</li>
+                </ul>
+              </li>
+            </ul>
+        </section>
+
+        <section
+          data-state="content"
+          data-auto-animate
+          data-auto-animate-id="test-aceptacion"
+        >
+          <h1>Test all the things</h1>
+          <h2>Acceptance tests</h2>
+          <div>Implementation: Behat</div>
+          <ul>
+            <li>BDD tool on PHP</li>
+            <li>Behat Extension: module to integrate Drupal and Behat</li>
+            <li>Behat contexts provide actions ready to be used in tests</li>
+          </ul>
+          <div>
+            <pre  data-trim class="language-python">
+              When I am on "/some/page"
+              When I fill "username" with "someone"
+              When I fill "password" with "123456"
+              When I press "login"
+            </pre>
+          </div>
+          <ul>
+            <li>
+              Tests can use Drupal API
+              <ul>
+                <li>Data test creation, pre-conditions, etc</li>
+                <li>Test assertions</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section
+          data-state="content"
+          data-auto-animate
+          data-auto-animate-id="test-aceptacion"
+        >
+          <h1>Test all the things</h1>
+          <h2>Acceptance tests</h2>
+          <ul>
+            <li>
+              Many additional <em>contexts</em> available...
+              <ul>
+                <li>
+                  <a href="https://github.com/nuvoleweb/drupal-behat"
+                  >nuvole/drupal-behat</a
+                  >
+                </li>
+                <li>
+                  <a href="https://github.com/Metadrop/behat-contexts"
+                  >Metadrop/behat-contexts</a
+                  >
+              </li>
+              <li>
+                <a href="https://github.com/drevops/behat-steps">drevops/behat-steps</a>
+              </li>
+            </ul>
+            </li>
+
+            <li>
+              ...that offer many Behat steps ready to use
+              <ul class="multicolumn no-bullets">
+                <li>Content creation</li>
+                <li>Cookie acceptance</li>
+                <li>Groups module</li>
+                <li>Media</li>
+                <li>Paragraphs</li>
+                <li>Search API</li>
+                <li>...</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section data-auto-animate>
+          <img
+            src="./assets/images/img02-behat-example.png"
+            alt="Ejemplo de Behat"
+          />
+        </section>
+
+        <section
+          data-state="content"
+          data-auto-animate
+          data-background-video-loop
+          data-background-video="assets/videos/video_all_backstop_images_and_references.webm"
+          data-background-position="5% 15%"
+          data-auto-animate-id="regresion-visual"
+          class="weight-left"
+        >
+          <h1>Test all the things</h1>
+          <h2>Visual regression</h2>
+
+          <ul>
+            <li>Visual error detection</li>
+            <li>Image comparison</li>
+            <li>BackstopJS</li>
+            <li>CLI execution</li>
+            <li>HTML reports</li>
+            <li>JUnit format reports (CI integration)</li>
+          </ul>
+        </section>
+
+        <section
+          data-state="content"
+          data-auto-animate
+          data-background-video-loop
+          data-background-video="assets/videos/BackstopJS_error_and_diff.mp4"
+          data-auto-animate-id="regresion-visual"
+          class="weight-left"
+        >
+          <h1>Test all the things</h1>
+          <h2>Visual regression</h2>
+
+          <ul>
+            <li>Generate reference images</li>
+            <li>Compare references with screenshots during testing</li>
+            <li>Restrict comparison area using CSS selectors</li>
+            <li>Tolerance level for differences</li>
+            <li>Interaction via Puppeteer or Playwright</li>
+          </ul>
+        </section>
+
+        <section
+          data-state="content"
+          data-auto-animate
+          data-auto-animate-id="regresion-visual"
+        >
+          <h1>Test all the things</h1>
+          <h2>Visual regression</h2>
+          <ul>
+            <li>
+              Test components or parts, not entire pages
+              <ul>
+                <li>Smaller screenshots</li>
+                <li>Smaller repository</li>
+                <li>Faulty component is easier to spot</li>
+                <li>
+                  Avoid problems with moving parts (dates)
+                </li>
+              </ul>
+            </li>
+            <li>
+                Animations or videos: stop them in <em>onReady</em> and <em>onBefore</em>
+            </li>
+            <li>Remove cookie banners and similar elements</li>
+            <li>Use <a href="https://github.com/Metadrop/backstopjs-addons/">Metadrop/backstopjs-addons</a></li>
+          </ul>
+        </section>
+
+        <section
+          data-state="content"
+          data-background-image="assets/images/img10b-accessibility.png"
+          data-background-position="75% -15%"
+          data-background-size="45%"
+          class="weight-left"
+          data-auto-animate
+          data-auto-animate-id="accessibility"
+        >
+          <h1>Test all the things</h1>
+          <h2>Accessibility</h2>
+          <ul>
+            <li>Forgotten and overlooked</li>
+            <li>Inclusivity</li>
+            <li>European Accessibility Act: AA compliance mandatory (June 2025)</li>
+            <li>Review from project start</li>
+            <li>
+              Fixing everything at the end is overwhelming
+            </li>
+            <li>Impacts all layers (design, UX, functionality, etc)</li>
+            <li>
+              Intuition often fails, review early, review often, especially designs
+            </li>
+          </ul>
+        </section>
+
+        <section
+          data-state="content"
+          data-background-image="assets/images/img03-wave-in-browser-bis.png"
+          data-background-position="90% 50%"
+          data-background-size="40%"
+          class="weight-left"
+          data-auto-animate
+          data-auto-animate-id="accessibility"
+        >
+          <h1>Test all the things</h1>
+          <h2>Accessibility</h2>
+          <div>WAVE</div>
+            <ul>
+            <li data-id="aaa">Fully featured</li>
+            <li>Interactive interface</li>
+            <li>Browser extension</li>
+            <li>Can be automated with subscription</li>
+            </ul>
+        </section>
+
+        <section
+          data-state="content"
+          data-background-image="assets/images/img04-ibm-accessibility-assessment.png"
+          data-background-position="90% 50%"
+          data-background-size="40%"
+          class="weight-left"
+          data-auto-animate
+          data-auto-animate-id="accessibility"
+        >
+          <h1>Test all the things</h1>
+          <h2>Accessibility</h2>
+          <div>IBM Equal Access Accessibility Checker</div>
+            <ul>
+            <li data-id="box">Fully featured</li>
+            <li>Excellent documentation</li>
+            <li>Browser extension</li>
+            <li>Automated with package on GitHub</li>
+            </ul>
+        </section>
+
+        <section
+          data-state="content"
+          data-auto-animate
+          data-auto-animate-id="accessibility"
+        >
+          <h1>Test all the things</h1>
+          <h2>Accessibility</h2>
+          <div>Pa11y</div>
+            <ul>
+            <li>Command-line tool (can be automated)</li>
+            <li>FLOSS</li>
+            <li>Iterates over a list of pages or sitemap</li>
+            <li>JUnit format reports (CI integration)</li>
+            <li>Requires Node.js</li>
+            <li>Configurable error threshold</li>
+            <li>Our accessibility tool of choice</li>
+            </ul>
+        </section>
+
+        <section
+          data-state="content"
+          data-background-image="assets/images/img07-unlighthouse.png"
+          data-background-position="90% 50%"
+          data-background-size="40%"
+          class="weight-left"
+        >
+          <h1>Test all the things</h1>
+            <h2>Correctness and quality</h2>
+            <div>Lighthouse analysis</div>
+
+            <ul>
+            <li>Performance</li>
+            <li>Accessibility</li>
+            <li>Progressive Web Apps</li>
+            <li>SEO</li>
+            <li>
+              Unlighthouse
+              <ul>
+              <li>Uses Lighthouse but tests an entire site</li>
+              <li>Auto-discovery or sitemap</li>
+              <li>Detects URL patterns to reduce test volume</li>
+              </ul>
+            </li>
+
+            <li>Can be automated (CI)</li>
+          </ul>
+        </section>
+
+        <section
+          data-state="content"
+          data-background-image="assets/images/img05-gatling.png"
+          data-background-position="90% 50%"
+          data-background-size="40%"
+          class="weight-left"
+        >
+          <h1>Test all the things</h1>
+          <h2>Load and performance</h2>
+
+          <ul>
+            <li>Response times</li>
+            <li>Breaking point</li>
+            <li>
+              Can be automated to track trends
+              <ul>
+              <li>A sudden change in the trend indicates something to review</li>
+              </ul>
+            </li>
+            <li>
+              Tools
+              <ul>
+              <li>ab test: basic and functional</li>
+              <li>Apache JMeter: powerful, GUI, reports</li>
+              <li>Gatling: powerful, code-based, reports</li>
+                <li>...</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section data-state="content">
+          <h1>Test all the things</h1>
+            <h2>Internal and external APIs</h2>
+            <div>Newman runs Postman collections from the console</div>
+            <ul>
+            <li>
+              Internal
+              <ul>
+              <li>Test API functionalities</li>
+              </ul>
+            </li>
+            </ul>
+            <br />
+            <ul>
+            <li>
+              External
+              <ul>
+              <li>Broken external API, broken website</li>
+              <li>Detect third-party issues</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section data-state="content">
+          <h1>Test all the things</h1>
+          <h2>HTTP headers</h2>
+          <div>Detect important internal problems</div>
+          <ul>
+            <li>Using Newman</li>
+            <li>
+              Cache issues
+              <ul>
+                <li><pre>x-drupal-dynamic-cache: UNCACHEABLE</pre></li>
+                <li><pre>cache-control: no-cache</pre></li>
+                <li>...</li>
+              </ul>
+            </li>
+            <li>
+              Security headers
+              <ul>
+                <li>HSTS, CSP, Permissions-Policy, etc</li>
+                <li>CORS, COEP, CORP, COOP, ...</li>
+                <li>...</li>
+              </ul>
+            </li>
+            <li>...</li>
+          </ul>
+        </section>
+
+        <section data-state="content" data-auto-animate>
+          <h1>Test all the things</h1>
+            <h2>Smoke tests</h2>
+            <div>
+            No catastrophic error
+            </div>
+            <ul>
+            <li>Check that the site is up and running</li>
+            <li>Check critical functionalities</li>
+            <li>Must be quick</li>
+            <li>Should not change the site or generate any content</li>
+            <li>
+              Detects:
+              <ul>
+              <li>Corrupt artefact</li>
+              <li>Database down</li>
+              <li>Network errors</li>
+              <li>Uncommon critical errors</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section data-state="content">
+          <h1>Test all the things</h1>
+            <h2>Deployment tests</h2>
+            <ul>
+            <li>Critical step for a website</li>
+            <li>
+              Data updates, library changes, new code...
+            </li>
+            <li>Perform deployment simulation in test environment</li>
+            <li>Same data as production (or very similar)</li>
+            <li>Possible dedicated environment for this purpose</li>
+            <li>Deploy without surprises</li>
+            </ul>
+        </section>
+
+        <section
+          data-state="chapter"
+          data-background-image="./assets/images/background08.svg"
+          data-background-size="auto"
+        >
+          <h1>When and where</h1>
+        </section>
+
+        <section data-state="content" data-auto-animate>
+          <h1>When and where</h1>
+          <h2>Local development environment</h2>
+          <div>
+            Manually triggered tests
+          </div>
+          <ul>
+            <li>Must be easy to launch</li>
+            <li>Always ready</li>
+          </ul>
+          <br><br>
+          <div>Available tests</div>
+          <ul class="multicolumn no-bullets">
+            <li>Static code analysis </li>
+            <li>Acceptance tests</li>
+            <li>PHPUnit</li>
+            <li>Visual regression</li>
+            <li>Performance and load</li>
+            <li>API testing</li>
+            <li>Smoke tests</li>
+          </ul>
+        </section>
+
+        <section data-state="content" data-auto-animate>
+          <h1>When and where</h1>
+
+          <h2>Local development environment</h2>
+          <div>
+            Automatically triggered tests
+          </div>
+
+          <ul>
+            <li>GrumPHP in Git pre-commit hook</li>
+            <li>Fast</li>
+            <li>Very fast</li>
+          </ul>
+          <br><br>
+          <div>Available tests</div>
+          <ul class="no-bullets">
+            <li>Static code analysis</li>
+            <li>Linters: YML, CSS, Composer, etc</li>
+            <li>Commit message</li>
+          </ul>
+        </section>
+
+        <section data-state="content">
+          <h1>When and where</h1>
+          <h2>Automated testing environment</h2>
+          <ul>
+            <li>Verify that an MR/PR doesn't break anything</li>
+            <li>Post merge</li>
+          </ul>
+          <br><br>
+          <div>Available tests</div>
+          <ul class="multicolumn no-bullets">
+            <li>Static code analysis</li>
+            <li>Packages (security and updates)</li>
+            <li>Smoke tests (and stop if it fails!)</li>
+            <li>Acceptance tests</li>
+            <li>PHPUnit</li>
+            <li>Visual regression</li>
+            <li>Performance and load (store trend)</li>
+            <li>API testing</li>
+            <li>HTTP headers</li>
+          </ul>
+        </section>
+
+        <section
+          data-state="content"
+          data-auto-animate
+        >
+          <h1>When and where</h1>
+            <h2>Production environment</h2>
+            <ul>
+            <li>Test the most critical elements after a deployment</li>
+            <li>Goodbye to uncertainty and manual team testing</li>
+            <li>Non-destructive and no content creation tests</li>
+            <li>NOT a monitoring system</li>
+          </ul>
+          <br><br>
+          <div>Available tests</div>
+          <ul class="multicolumn no-bullets">
+              <li>Smoke tests</li>
+              <li>Limited acceptance tests</li>
+              <li>Limited visual regression</li>
+              <li>Performance and load (store trend)</li>
+              <li>API testing</li>
+              <li>HTTP headers</li>
+              </ul>
+        </section>
+
+        <section
+          data-state="chapter"
+          data-background-image="./assets/images/background03.svg"
+          data-background-size="auto"
+        >
+          <h1>Implementation</h1>
+        </section>
+
+        <section data-state="content">
+          <h1>Implementation</h1>
+          <h2>Tools</h2>
+          <div>
+            <ul class="multicolumn no-bullets">
+              <li>Behat</li>
+              <li>BackstopJS</li>
+              <li>WAVE</li>
+              <li>IBM Equal Access Accessibility Checker</li>
+              <li>Pa11y</li>
+              <li>ab test</li>
+              <li>Apache JMeter</li>
+              <li>Gatling</li>
+              <li>Newman</li>
+              <li>Composer</li>
+              <li>PHPStan</li>
+              <li>Grumphp</li>
+              <li>phpqa</li>
+              <li>phpcs</li>
+              <li>phpmd</li>
+              <li>phplint</li>
+              <li>yamllint</li>
+              <li>jsonlint</li>
+              <li>parallel-lint</li>
+            </ul>
+          </div>
+        </section>
+
+        <section
+          data-state="content"
+          data-background-image="assets/images/img06-gitlab-templates.png"
+          data-background-position="85% 50%"
+          data-background-size="25%"
+          class="weight-left-little"
+        >
+          <h1>Implementation</h1>
+          <h2>GitLab templates</h2>
+            <ul>
+            <li>Implementation of Drupal.org tests</li>
+            <li>
+              <a href="https://www.drupal.org/project/gitlab_templates"
+              >GitLab Templates on Drupal.org</a>
+            </li>
+            <li>Specific for GitLab</li>
+            <li>Code analysis, PHPUnit, Nightwatch, etc</li>
+            <li>There is  a session about GitLab templates: <a href="https://devdays2026.drupal.org.gr/drupal-developer-days-athens-2026/session/gitlab-cicd-templates-da">Gitlab CI/CD Templates by DA</a></li>
+          </ul>
+        </section>
+
+        <section
+          data-state="content"
+        >
+
+          <h1>Implementation</h1>
+          <h2>Aljibe</h2>
+          <ul>
+            <li>
+              Set of DDEV plugins
+            </li>
+              <div style="position: absolute; top: 0; right: 0;">
+                <img
+                  src="./assets/images/aljibe-logo.png"
+                  alt="Event logo"
+                  width="300px"
+                  style="border: 0px"
+                />
+              </div>
+            <li>
+              <ul class="multicolumn no-bullets">
+                <li>Behat</li>
+                <li>BackstopJS</li>
+                <li>Unlighthouse</li>
+                <li>
+                  Static code analysis (PHPStan, phpcs, linters, etc)
+                </li>
+                <li>Git integration (GrumPHP)</li>
+                <li>Pa11y</li>
+                <li>Newman</li>
+                <li>Composer (security and updates)</li>
+                <li>...and more!</li>
+              </ul>
+
+            </li>
+            <li>
+              <a href="https://github.com/Metadrop/ddev-aljibe/"
+              >https://github.com/Metadrop/ddev-aljibe/</a
+              >
+            </li>
+            <li>Stable, the foundation for our projects</li>
+            <li>Can be used in CI</li>
+            <li>Detailed article: <a href="https://metadrop.net/en/articles/aljibe-quality-and-testing-drupal-developments-ddev">Aljibe: quality and testing for Drupal developments with DDEV</a></li>
+          </ul>
+        </section>
+
+        <section
+          data-state="chapter"
+          data-background-image="assets/images/background04.svg"
+          data-background-size="auto"
+        >
+          <h1>Final notes</h1>
+        </section>
+
+        <section
+          data-auto-animate
+          data-state="content"
+        >
+          <h1>Final notes</h1>
+          <h2>Test all the things</h2>
+
+          <ul>
+            <li>Static code analysis</li>
+            <li>Package management (security and updates)</li>
+            <li>Acceptance tests</li>
+            <li>Visual regression tests</li>
+            <li>Accessibility</li>
+            <li>Performance, quality and correctness</li>
+            <li>Internal and external APIs</li>
+            <li>HTTP headers</li>
+            <li>Smoke tests</li>
+            <li>Deployment tests</li>
+          </ul>
+        </section>
+
+        <section data-state="content" data-auto-animate>
+          <h1>Final notes</h1>
+          <h2>Test all the things</h2>
+          <ul>
+            <li>Tests must be GREEN!</li>
+            <li>Automate all automatable tests</li>
+            <li>Make manual tests easy to execute</li>
+            <li>Any possible error that can be tested should be tested</li>
+            <li>Prioritise based on the criticality of the site/functionality</li>
+            <li>Live peacefully</li>
+            <li>Have I mentioned that tests must be GREEN?</li>
+          </ul>
+        </section>
+
+        <section
+          data-background-image="./assets/images/background09.svg"
+          data-state="chapter"
+          data-background-size="auto"
+        >
+          <h1 class="xxlarge" style="margin-bottom: 20%">Questions?</h1>
+        </section>
+
+
+        <section
+          data-background-image="./assets/images/background-sponsors.png"
+          data-state="chapter"
+          data-background-size="auto"
+        >
+        </section>
+
+
+        <section
+          data-background-image="./assets/images/background01.svg"
+          data-state="chapter"
+          data-background-size="auto"
+        >
+          <h1 class="xxxlarge" style="margin-bottom: 5%">¡Gracias!</h1>
+          <div class="links">
+            <h2>Feel free to reach out</h2>
+            <ul>
+              <li>
+                <img src="./assets/images/ro_website.png">
+                <a href="https://www.drupal.org/u/tunic">https://metadrop.net</a>
+              </li>
+              <li>
+                <img src="./assets/images/ro_drupal.png">
+                <a href="https://github.com/tunic">tunic at Drupal.org</a>
+              </li>
+              <li>
+                <img src="./assets/images/ro_linkedin.png">
+                <a href="https://www.linkedin.com/in/ricardo-sanz-ante/">Ricardo Sanz Ante</a>
+              </li>
+              <li>
+                <img src="./assets/images/ro_email.png">
+                ricard&#111;&#64;metdr&#111;p.net
+              </li>
+            </ul>
+          </div>
+        </section>
+
+
+      </div>
+    </div>
+
+    <footer></footer>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        slideNumber: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom],
+      });
+    </script>
+  </body>
+</html>
